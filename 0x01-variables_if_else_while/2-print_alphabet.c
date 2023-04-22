@@ -1,13 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Entry print
- * Description: 'Print alphabets lowercase'
- * Return: Always 0
+ * main - prints the aphabets in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	putchar(65);
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
 	putchar('\n');
 	return (0);
 }
